@@ -3,7 +3,7 @@ FROM oven/bun:latest AS builder
 WORKDIR /app
 
 # Copy package management files first for better caching
-COPY package.json bun.lockb ./
+COPY package.json bun.lock ./
 RUN bun install
 
 # Copy all project files and build
@@ -18,7 +18,7 @@ ENV NODE_ENV=production
 
 # Copy only the necessary files from the builder stage
 COPY --from=builder /app/package.json ./
-COPY --from=builder /app/bun.lockb ./
+COPY --from=builder /app/bun.lock ./
 COPY --from=builder /app/dist ./dist
 
 # Install only production dependencies
