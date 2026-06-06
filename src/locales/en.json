@@ -1,0 +1,74 @@
+{
+  "common": {
+    "searchPlaceholder": "Search employee name, code, email...",
+    "search": "Search",
+    "exportPDF": "Export PDF",
+    "exportExcel": "Export Excel",
+    "allDepartments": "All departments",
+    "loading": "Loading...",
+    "noRecords": "No records found.",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "status": {
+      "present": "Present",
+      "late": "Late",
+      "incomplete": "Incomplete",
+      "absent": "Absent",
+      "active": "Active",
+      "inactive": "Inactive"
+    }
+  },
+  "attendance": {
+    "title": "Attendance",
+    "globalAttendance": "Global Attendance",
+    "employeeAttendance": "Employee Attendance",
+    "table": {
+      "date": "Date",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "workHours": "Work hours",
+      "status": "Status",
+      "device": "Device",
+      "inScore": "In score",
+      "outScore": "Out score"
+    },
+    "stats": {
+      "totalPresent": "Total present",
+      "totalLate": "Total late",
+      "totalIncomplete": "Total incomplete",
+      "totalAbsent": "Total absent"
+    }
+  },
+  "reports": {
+    "title": "Reports",
+    "table": {
+      "employee": "Employee",
+      "code": "Code",
+      "department": "Department",
+      "present": "Present",
+      "late": "Late",
+      "incomplete": "Incomplete",
+      "absent": "Absent",
+      "avgHours": "Avg. hours"
+    },
+    "stats": {
+      "workingDays": "Working days",
+      "avgAttendance": "Avg attendance",
+      "totalLateDays": "Total late days",
+      "incomplete": "Incomplete"
+    }
+  },
+  "users": {
+    "title": "Users",
+    "table": {
+      "employee": "Employee",
+      "code": "Code",
+      "department": "Department",
+      "email": "Email",
+      "status": "Status",
+      "actions": "Actions"
+    }
+  }
+}
