@@ -9,7 +9,7 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
-import appCss from "../styles.css?url";
+import "../styles.css";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { AppProvider } from "@/contexts/AppContext";
 
@@ -90,12 +90,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:description", content: "Palm Scan Pro is a biometric attendance system that uses palm recognition for employee check-in and check-out." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ff781f89-9560-4999-800f-53a13f021dfa/id-preview-63c5aab2--9e221ca5-43ab-4aeb-8566-8694199238d8.lovable.app-1780445938002.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ff781f89-9560-4999-800f-53a13f021dfa/id-preview-63c5aab2--9e221ca5-43ab-4aeb-8566-8694199238d8.lovable.app-1780445938002.png" },
-    ],
-    links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
     ],
   }),
   shellComponent: RootShell,
