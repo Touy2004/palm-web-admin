@@ -19,7 +19,7 @@ ENV NODE_ENV=production
 # Copy only the necessary files from the builder stage
 COPY --from=builder /app/package.json ./
 COPY --from=builder /app/bun.lock ./
-COPY --from=builder /app/.output ./.output
+COPY --from=builder /app/dist ./dist
 
 # Install only production dependencies
 RUN bun install --production
